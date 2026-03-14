@@ -111,8 +111,17 @@ int main(int argc, char* argv[]) {
     std::cout << "Tiempo de ejecucion   : " << tiempo_us << " microsegundos (us)\n";
     std::cout << "============================================\n\n";
 
-    // Descomenta la siguiente línea si quieres que imprima la matriz visual del horario
-    // sol_plan->Print(std::cout);
+    // --- NUEVO: Escribir la solución en salid.txt ---
+    if (sol_plan) {
+      std::ofstream archivo_salida("salida.txt");
+      if (archivo_salida.is_open()) {
+        sol_plan->Print(archivo_salida);
+        archivo_salida.close();
+        std::cout << "[INFO] La matriz de horarios detallada se ha guardado correctamente en 'salid.txt'\n";
+      } else {
+        std::cerr << "[ADVERTENCIA] No se pudo crear o abrir el archivo 'salid.txt' para guardar la solucion.\n";
+      }
+    }
 
   } catch (const std::exception& e) {
     std::cerr << "\n[ERROR CRITICO]: " << e.what() << "\n";
