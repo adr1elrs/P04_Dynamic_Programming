@@ -1,0 +1,10 @@
+{
+	"class": "BinaryDivideAndConquer",
+	"isSmall": 4,
+	"smallSolver": {
+		"class": "BinaryDivideAndConquer",
+		"smallSolver": {
+			"class": "Greedy"
+		}
+	}
+}

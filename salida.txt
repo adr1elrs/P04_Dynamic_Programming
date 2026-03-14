@@ -1,0 +1,74 @@
+
+=== DÍA 0 ===
+               Turno 0   Turno 1   Turno 2   
+Empleado 0     -         -         █         
+Empleado 1     -         █         -         
+Empleado 2     -         -         █         
+Empleado 3     -         █         -         
+Empleado 4     -         -         -         
+
+=== DÍA 1 ===
+               Turno 0   Turno 1   Turno 2   
+Empleado 0     -         █         -         
+Empleado 1     █         -         -         
+Empleado 2     -         █         -         
+Empleado 3     -         █         -         
+Empleado 4     -         -         █         
+
+=== DÍA 2 ===
+               Turno 0   Turno 1   Turno 2   
+Empleado 0     -         █         -         
+Empleado 1     -         -         -         
+Empleado 2     -         -         █         
+Empleado 3     -         -         -         
+Empleado 4     █         -         -         
+
+=== DÍA 3 ===
+               Turno 0   Turno 1   Turno 2   
+Empleado 0     -         █         -         
+Empleado 1     -         -         █         
+Empleado 2     -         -         -         
+Empleado 3     █         -         -         
+Empleado 4     -         -         -         
+
+=== DÍA 4 ===
+               Turno 0   Turno 1   Turno 2   
+Empleado 0     █         -         -         
+Empleado 1     -         -         -         
+Empleado 2     -         █         -         
+Empleado 3     -         -         █         
+Empleado 4     -         -         -         
+
+=== DÍA 5 ===
+               Turno 0   Turno 1   Turno 2   
+Empleado 0     -         -         █         
+Empleado 1     -         -         -         
+Empleado 2     -         █         -         
+Empleado 3     -         -         -         
+Empleado 4     █         -         -         
+
+=== DÍA 6 ===
+               Turno 0   Turno 1   Turno 2   
+Empleado 0     -         -         █         
+Empleado 1     -         █         -         
+Empleado 2     -         -         -         
+Empleado 3     █         -         -         
+Empleado 4     -         -         -         
+
+==================================================
+              RESUMEN GLOBAL                      
+==================================================
+Días planificados: 0 a 6
+Calidad de la solución: 1979
+  -> Satisfacción acumulada: 179
+  -> Turnos cubiertos: 18 de 21 (Multiplicador x100)
+  -> Volumen de plantilla: 24 asignaciones hechas de 27 requeridas en total
+--------------------------------------------------
+Auditoría de Descansos (Ventana actual: 7 días):
+Empleado 0  : 7   días trabajados [OK - Máx permitido: 7]
+Empleado 1  : 4   días trabajados [OK - Máx permitido: 5]
+Empleado 2  : 5   días trabajados [OK - Máx permitido: 5]
+Empleado 3  : 5   días trabajados [OK - Máx permitido: 6]
+Empleado 4  : 3   días trabajados [OK - Máx permitido: 6]
+==================================================
+
