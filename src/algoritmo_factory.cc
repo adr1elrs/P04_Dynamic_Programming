@@ -1,6 +1,7 @@
 #include "../lib/algoritmo_factory.h"
 #include "../lib/planificacion_dyv.h"
 #include "../lib/algoritmo_voraz.h"
+#include "../lib/algoritmo_hibrido.h"
 #include "../lib/programacion_dinamica.h"
 
 #include <string>
@@ -12,12 +13,15 @@ std::shared_ptr<Algoritmo> AlgoritmoFactory::Crear(const nlohmann::json& config)
   }
 
   std::string tipo = config["class"];
-
+  // Poner algo como Algoritmo FactoryA, dependiendo de lo que sea hacer el correspondiente.
   if (tipo == "Greedy") {
     return std::make_shared<AlgoritmoVoraz>();
   } 
   else if (tipo == "DynamicProgramming") {
     return std::make_shared<ProgramacionDinamica>();
+  }
+  else if (tipo == "Hybrid") { 
+    return std::make_shared<AlgoritmoHibrido>();
   } 
   else if (tipo == "BinaryDivideAndConquer") {
     if (!config.contains("smallSolver")) {

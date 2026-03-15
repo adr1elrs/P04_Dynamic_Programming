@@ -11,7 +11,7 @@ LIBDIR = lib
 OBJDIR = obj
 
 # Localización de archivos (Todo en una sola línea para evitar errores de salto)
-SOURCES = main.cc src/instancia_planificacion.cc src/solucion_planificacion.cc src/divide_y_venceras.cc src/planificacion_dyv.cc src/algoritmo_voraz.cc src/programacion_dinamica.cc src/algoritmo_factory.cc
+SOURCES = main.cc src/instancia_planificacion.cc src/solucion_planificacion.cc src/divide_y_venceras.cc src/planificacion_dyv.cc src/algoritmo_voraz.cc src/programacion_dinamica.cc src/algoritmo_factory.cc src/algoritmo_hibrido.cc
 
 # Transformamos la lista de fuentes en una lista de objetos en la carpeta obj/
 OBJECTS = $(SOURCES:%.cc=$(OBJDIR)/%.o)
