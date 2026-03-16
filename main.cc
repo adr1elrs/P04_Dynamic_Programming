@@ -74,7 +74,7 @@ int main(int argc, char* argv[]) {
   try {
     std::cout << "[INFO] Cargando configuracion desde: " << ruta_config << "\n";
     json config_json = LeerConfiguracion(ruta_config);
-    auto algoritmo = AlgoritmoFactory::Crear(config_json);
+    auto algoritmo = AlgoritmoFactory::CrearAlgoritmos(config_json);
 
     std::cout << "[INFO] Cargando instancia desde: " << ruta_instancia << "\n";
     auto instancia = std::make_shared<InstanciaPlanificacion>(ruta_instancia);

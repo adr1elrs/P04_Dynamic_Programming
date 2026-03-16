@@ -83,6 +83,6 @@ std::shared_ptr<Solucion> ProgramacionDinamica::solve(std::shared_ptr<Instancia>
   }
 
   // Ajuste global de descansos para toda la ventana de tiempo
-  // solucion->AjustarDescansos();
+  solucion->AjustarDescansos();
   return solucion;
 }

@@ -69,6 +69,6 @@ std::shared_ptr<Solucion> AlgoritmoVoraz::solve(std::shared_ptr<Instancia> insta
   }
 
   // Ajuste final para cumplir restricciones globales
-  // solucion->AjustarDescansos();
+  solucion->AjustarDescansos();
   return solucion;
 }

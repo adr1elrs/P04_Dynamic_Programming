@@ -126,5 +126,6 @@ std::shared_ptr<Solucion> AlgoritmoHibrido::solve(std::shared_ptr<Instancia> ins
       }
     }
   }
+  solucion->AjustarDescansos();
   return solucion;
 }

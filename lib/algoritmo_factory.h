@@ -7,8 +7,7 @@
 
 class AlgoritmoFactory {
  public:
-  // Solo declaramos el método estático
-  static std::shared_ptr<Algoritmo> Crear(const nlohmann::json& config);
+  static std::shared_ptr<Algoritmo> CrearAlgoritmos(const nlohmann::json& config);
 };
 
 #endif
